@@ -3,26 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoPublisher for Creators</title>
+    <title>AutoPublisher | The Ultimate Desktop App for Gaming Creators</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; line-height: 1.6; background-color: #f9f9f9; color: #333;}
-        .container { max-width: 600px; margin: auto; padding: 30px; background: white; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        h1 { color: #000; }
-        p { font-size: 1.1em; color: #555; }
-        .links { margin-top: 30px; }
-        .links a { margin: 0 15px; text-decoration: none; color: #fe2c55; font-weight: bold; font-size: 1.1em; }
-        .links a:hover { text-decoration: underline; }
+        /* Reset and Base Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; background-color: #f4f7f6; color: #333; }
+        a { text-decoration: none; color: inherit; }
+        
+        /* Navigation Bar */
+        nav { background: #fff; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .logo { font-size: 1.5em; font-weight: bold; color: #fe2c55; }
+        .nav-links a { margin-left: 20px; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: #fe2c55; }
+
+        /* Hero Section */
+        .hero { background: #1a1a2e; color: #fff; text-align: center; padding: 100px 20px; }
+        .hero h1 { font-size: 3em; margin-bottom: 20px; }
+        .hero p { font-size: 1.2em; max-width: 700px; margin: 0 auto 30px auto; color: #ccc; }
+        .hero .btn { background: #fe2c55; color: #fff; padding: 15px 30px; border-radius: 5px; font-weight: bold; display: inline-block; transition: background 0.3s; }
+        .hero .btn:hover { background: #e0264b; }
+
+        /* Features Section */
+        .features { padding: 80px 20px; max-width: 1000px; margin: auto; text-align: center; }
+        .features h2 { font-size: 2.5em; margin-bottom: 50px; color: #1a1a2e; }
+        .feature-grid { display: flex; justify-content: space-between; gap: 30px; flex-wrap: wrap; }
+        .feature-box { background: #fff; padding: 30px; border-radius: 8px; flex: 1; min-width: 250px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .feature-box h3 { margin-bottom: 15px; color: #fe2c55; }
+        .feature-box p { color: #666; font-size: 0.95em; }
+
+        /* Footer */
+        footer { background: #1a1a2e; color: #fff; text-align: center; padding: 40px 20px; margin-top: 50px; }
+        .footer-links { margin-bottom: 20px; }
+        .footer-links a { margin: 0 15px; color: #ccc; font-size: 0.9em; transition: color 0.3s; }
+        .footer-links a:hover { color: #fe2c55; }
+        footer p { font-size: 0.8em; color: #777; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>AutoPublisher ⚙️</h1>
-        <p>A powerful content management platform designed for gamers and creators. Connect your TikTok account to schedule, manage, and seamlessly publish your gaming highlights directly from your desktop.</p>
-        
-        <div class="links">
+
+    <nav>
+        <div class="logo">AutoPublisher ⚙️</div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#contact">Contact Support</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Streamline Your Gaming Content</h1>
+        <p>A powerful, secure, and offline desktop content management platform designed specifically for gaming creators. Connect your TikTok account to schedule, manage, and seamlessly publish your highlights directly from your PC.</p>
+        <a href="#" class="btn">Download for Windows (Coming Soon)</a>
+    </header>
+
+    <section id="features" class="features">
+        <h2>Why Creators Choose AutoPublisher</h2>
+        <div class="feature-grid">
+            <div class="feature-box">
+                <h3>🔒 Secure OAuth Login</h3>
+                <p>We use official API integrations. Your credentials are never shared with us, ensuring your TikTok account remains 100% secure.</p>
+            </div>
+            <div class="feature-box">
+                <h3>📂 Local Data Storage</h3>
+                <p>As a desktop application, all your videos, metadata, and access tokens are stored locally on your machine. We do not use external cloud servers.</p>
+            </div>
+            <div class="feature-box">
+                <h3>⚡ Automated Uploads</h3>
+                <p>Queue up your gaming highlights and let the app handle the heavy lifting, interacting seamlessly with TikTok's Content Posting API.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-links">
             <a href="privacy.html">Privacy Policy</a>
             <a href="terms.html">Terms of Service</a>
         </div>
-    </div>
+        <p>&copy; 2026 AutoPublisher. Built for creators. Not officially affiliated with TikTok.</p>
+    </footer>
+
 </body>
 </html>
