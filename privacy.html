@@ -3,26 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - AutoPublisher</title>
+    <title>Privacy Policy | AutoPublisher</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; color: #333; }
-        h1 { border-bottom: 2px solid #fe2c55; padding-bottom: 10px; }
+        /* Reset and Base Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; background-color: #f4f7f6; color: #333; }
+        a { text-decoration: none; color: inherit; }
+        
+        /* Navigation Bar */
+        nav { background: #fff; padding: 20px 50px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .logo { font-size: 1.5em; font-weight: bold; color: #fe2c55; }
+        .nav-links a { margin-left: 20px; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: #fe2c55; }
+
+        /* Content Container */
+        .content-container { max-width: 800px; margin: 50px auto; padding: 40px; background: #fff; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .content-container h1 { color: #1a1a2e; margin-bottom: 10px; font-size: 2.5em; }
+        .content-container .date { color: #777; margin-bottom: 30px; font-style: italic; }
+        .content-container h2 { color: #fe2c55; margin-top: 30px; margin-bottom: 15px; font-size: 1.5em; border-bottom: 2px solid #f4f7f6; padding-bottom: 5px; }
+        .content-container p { margin-bottom: 15px; color: #555; }
+        .content-container ul { margin-left: 20px; margin-bottom: 15px; color: #555; }
+        .content-container li { margin-bottom: 8px; }
+
+        /* Footer */
+        footer { background: #1a1a2e; color: #fff; text-align: center; padding: 40px 20px; margin-top: 50px; }
+        .footer-links { margin-bottom: 20px; }
+        .footer-links a { margin: 0 15px; color: #ccc; font-size: 0.9em; transition: color 0.3s; }
+        .footer-links a:hover { color: #fe2c55; }
+        footer p { font-size: 0.8em; color: #777; }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-    <p>At AutoPublisher, your privacy is our priority. This policy explains how we collect, use, and protect your information when you use our platform.</p>
 
-    <h3>1. Information We Collect</h3>
-    <p>To provide our services, we request necessary access tokens from third-party platforms (like TikTok) strictly for the purpose of publishing your content. We do not collect unnecessary personal data.</p>
+    <nav>
+        <div class="logo">AutoPublisher ⚙️</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+    </nav>
 
-    <h3>2. How We Use Your Information</h3>
-    <p>Your authentication tokens and connected account data are used solely to fulfill your requests to upload and publish videos. We do not sell, rent, or share your information with any external advertisers or third parties.</p>
+    <main class="content-container">
+        <h1>Privacy Policy</h1>
+        <p class="date">Effective Date: June 25, 2026</p>
 
-    <h3>3. Data Security</h3>
-    <p>We implement strict security measures to ensure that your access tokens and publishing schedules are kept secure within our environment.</p>
+        <p>AutoPublisher ("we", "our", or "the App") is a desktop-based content management tool designed for gaming creators. We are committed to protecting your privacy. This policy explains how we handle your data when you use our application to connect with TikTok.</p>
 
-    <h3>4. User Control</h3>
-    <p>You can revoke AutoPublisher's access to your social media accounts at any time through the settings of the respective platforms (e.g., TikTok Security settings).</p>
+        <h2>1. Information We Collect</h2>
+        <p>When you authorize AutoPublisher using the TikTok Login Kit, we strictly access the following scopes requested during authentication:</p>
+        <ul>
+            <li><strong>Basic Profile Information (user.info.basic):</strong> Used solely to verify your identity and display your profile picture/username within the local application interface.</li>
+            <li><strong>Video Publishing Capabilities (video.upload, video.publish):</strong> Used strictly to upload and publish your selected local video files from your desktop to your TikTok account.</li>
+        </ul>
+
+        <h2>2. How We Store Your Data (Local Storage Only)</h2>
+        <p>AutoPublisher is a client-side desktop application. This is a core part of our privacy commitment:</p>
+        <ul>
+            <li>All authentication tokens (OAuth tokens) are stored securely and <strong>locally</strong> on your personal computer.</li>
+            <li>We DO NOT maintain external databases, and we DO NOT transmit, store, or process your personal data, tokens, or video files on any third-party servers belonging to AutoPublisher.</li>
+        </ul>
+
+        <h2>3. Third-Party Services</h2>
+        <p>AutoPublisher uses TikTok's Official API Services to function. By using our application to publish to TikTok, you are also agreeing to be bound by the TikTok Terms of Service and TikTok Privacy Policy. We do not sell, rent, or share your data with any external advertisers or third parties.</p>
+
+        <h2>4. Data Retention and Revocation</h2>
+        <p>Because your data is stored locally on your machine, you have full control. You can delete the application and its local configuration files at any time to remove your data completely. Furthermore, you can revoke AutoPublisher's access to your social media accounts directly from your TikTok Security settings at any time.</p>
+
+        <h2>5. Contact Us</h2>
+        <p>If you have any questions or concerns about this Privacy Policy, please contact us at: <strong>support@louai-aldalati.github.io</strong></p>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+        <p>&copy; 2026 AutoPublisher. Built for creators. Not officially affiliated with TikTok.</p>
+    </footer>
+
 </body>
 </html>
